@@ -11,7 +11,12 @@ module.exports.Signup = async (req, res) => {
     }
     const user = await User.create({ email, password, username });
     const token = createSecretToken(user._id);
-    res.cookie("token", token, { httpOnly: true, maxAge: 3 * 24 * 60 * 60 * 1000 });
+    res.cookie("token", token, {
+      httpOnly: true,
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+      secure: true,
+      sameSite: "none",
+    });
     res.status(201).json({ success: true, message: "Account created", user: { id: user._id, username, email } });
   } catch (error) {
     console.error(error);
@@ -34,7 +39,12 @@ module.exports.Login = async (req, res) => {
       return res.status(401).json({ success: false, message: "Incorrect email or password" });
     }
     const token = createSecretToken(user._id);
-    res.cookie("token", token, { httpOnly: true, maxAge: 3 * 24 * 60 * 60 * 1000 });
+    res.cookie("token", token, {
+      httpOnly: true,
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+      secure: true,
+      sameSite: "none",
+    });
     res.status(200).json({ success: true, message: "Logged in", user: { id: user._id, username: user.username } });
   } catch (error) {
     console.error(error);
@@ -43,6 +53,10 @@ module.exports.Login = async (req, res) => {
 };
 
 module.exports.Logout = (req, res) => {
-  res.clearCookie("token");
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
   res.status(200).json({ success: true, message: "Logged out" });
 };
