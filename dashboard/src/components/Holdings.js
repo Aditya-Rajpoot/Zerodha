@@ -8,7 +8,7 @@ const Holdings = () => {
   // Step 1: Backend se ek baar original data fetch karo
   useEffect(() => {
     axios
-      .get("http://localhost:4000/allholdings", { withCredentials: true })
+      .get("zerodha-backend-3wdd.onrender.com/allholdings", { withCredentials: true })
       .then((res) => {
         setAllHoldings(res.data);
       })

@@ -10,7 +10,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "zerodha-backend-3wdd.onrender.com/login",
         { email, password },
         { withCredentials: true }
       );

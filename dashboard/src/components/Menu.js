@@ -9,7 +9,7 @@ const Menu = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/check-auth", { withCredentials: true })
+      .get("zerodha-backend-3wdd.onrender.com/check-auth", { withCredentials: true })
       .then((res) => {
         if (res.data.status) {
           setUsername(res.data.user.username);
@@ -31,7 +31,7 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:4000/logout",
+        "zerodha-backend-3wdd.onrender.com/logout",
         {},
         { withCredentials: true }
       );

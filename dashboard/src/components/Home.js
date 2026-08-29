@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/check-auth", { withCredentials: true })
+      .get("zerodha-backend-3wdd.onrender.com/check-auth", { withCredentials: true })
       .then((res) => {
         if (!res.data.status) {
           window.location.href = "http://localhost:3000";
