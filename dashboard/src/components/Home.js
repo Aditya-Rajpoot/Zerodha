@@ -12,13 +12,13 @@ const Home = () => {
       .get("zerodha-backend-3wdd.onrender.com/check-auth", { withCredentials: true })
       .then((res) => {
         if (!res.data.status) {
-          window.location.href = "http://localhost:3000";
+          window.location.href = "https://zerodha-frontend-dfxl.onrender.com";
         } else {
           setLoading(false);
         }
       })
       .catch(() => {
-        window.location.href = "http://localhost:3000";
+        window.location.href = "https://zerodha-frontend-dfxl.onrender.com";
       });
   }, []);
 

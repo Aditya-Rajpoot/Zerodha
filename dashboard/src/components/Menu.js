@@ -35,7 +35,7 @@ const Menu = () => {
         {},
         { withCredentials: true }
       );
-      window.location.href = "http://localhost:3000";
+      window.location.href = "https://zerodha-frontend-dfxl.onrender.com";
     } catch (error) {
       console.error(error);
     }

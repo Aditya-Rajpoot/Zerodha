@@ -16,7 +16,7 @@ const Signup = () => {
         { withCredentials: true }
       );
       if (data.success) {
-        window.location.href = "http://localhost:3001";
+        window.location.href = "https://zerodha-dashboard-xj7p.onrender.com";
       } else {
         alert(data.message);
       }
