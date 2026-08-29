@@ -11,7 +11,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "zerodha-backend-3wdd.onrender.com/signup",
+        "https://zerodha-backend-3wdd.onrender.com/signup",
         { email, password, username },
         { withCredentials: true }
       );

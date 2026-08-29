@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("zerodha-backend-3wdd.onrender.com/check-auth", { withCredentials: true })
+      .get("https://zerodha-backend-3wdd.onrender.com/check-auth", { withCredentials: true })
       .then((res) => {
         if (!res.data.status) {
           window.location.href = "https://zerodha-frontend-dfxl.onrender.com";
