@@ -1,0 +1,359 @@
+/* =========================================================
+   FUNDS PAGE
+   ========================================================= */
+
+.funds-page {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  box-sizing: border-box;
+  padding: 64px 32px 50px 32px;
+  background: #fff;
+  color: #424242;
+}
+
+
+/* =========================================================
+   TOP SECTION
+   ========================================================= */
+
+.funds-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-bottom: 42px;
+}
+
+.funds-top > p {
+  margin: 0;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.funds-actions {
+  display: flex;
+  gap: 6px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.fund-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  padding: 0 22px;
+
+  border-radius: 2px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  transition: background 0.2s ease;
+}
+
+.funds-add {
+  background: #387ed1;
+  color: #fff;
+}
+
+.funds-add:hover {
+  background: #2f6fba;
+  color: #fff;
+}
+
+.funds-withdraw {
+  background: #387ed1;
+  color: #fff;
+}
+
+.funds-withdraw:hover {
+  background: #2f6fba;
+  color: #fff;
+}
+
+
+/* =========================================================
+   TWO COLUMN LAYOUT
+   ========================================================= */
+
+.funds-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+  gap: 40px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.funds-section {
+  width: 100%;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.funds-section-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.funds-section-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  color: #424242;
+}
+
+
+/* =========================================================
+   STATEMENT / HELP LINKS
+   ========================================================= */
+
+.funds-links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 12px;
+}
+
+.funds-links span {
+  color: #387ed1;
+  font-size: 11px;
+}
+
+.funds-links a {
+  color: #387ed1;
+  text-decoration: none;
+}
+
+.funds-links a:hover {
+  color: #2f6fba;
+}
+
+
+/* =========================================================
+   EQUITY CARD
+   ========================================================= */
+
+.fund-card {
+  width: 100%;
+
+  border: 1px solid #e6e6e6;
+
+  box-sizing: border-box;
+
+  padding: 30px 22px 24px 22px;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   MAIN BALANCE ROWS
+   ========================================================= */
+
+.fund-main-row {
+  width: 100%;
+
+  min-height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+}
+
+.fund-main-row p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #777;
+}
+
+.fund-main-value {
+  font-size: 28px !important;
+  font-weight: 400;
+  color: #424242 !important;
+}
+
+
+/* Used margin background */
+
+.fund-highlight {
+  background: #fafafa;
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
+.fund-card hr,
+.commodity-card hr {
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+
+  margin: 14px 0;
+}
+
+
+/* =========================================================
+   NORMAL DATA ROWS
+   ========================================================= */
+
+.fund-data-row {
+  width: 100%;
+
+  min-height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+}
+
+.fund-data-row p {
+  margin: 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+.fund-data-row p:last-child {
+  color: #424242;
+  text-align: right;
+}
+
+
+/* =========================================================
+   COMMODITY CARD
+   ========================================================= */
+
+.commodity-card {
+  width: 100%;
+
+  border: 1px solid #e6e6e6;
+
+  box-sizing: border-box;
+
+  padding: 30px 22px 24px 22px;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   COMMODITY ROW
+   ========================================================= */
+
+.commodity-row {
+  width: 100%;
+
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+}
+
+.commodity-row p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #777;
+}
+
+.commodity-row p:last-child {
+  color: #424242;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .funds-page {
+    padding: 40px 24px;
+  }
+
+  .funds-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .funds-page {
+    padding: 30px 16px;
+  }
+
+  .funds-top {
+    align-items: flex-end;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .funds-top > p {
+    text-align: right;
+  }
+
+  .funds-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .funds-card,
+  .fund-card,
+  .commodity-card {
+    padding: 20px 12px;
+  }
+
+  .fund-main-value {
+    font-size: 22px !important;
+  }
+
+}
