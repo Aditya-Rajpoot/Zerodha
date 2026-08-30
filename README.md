@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Zerodha Clone 📈
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack clone of [Zerodha's Kite] trading platform, built with the MERN stack. This project replicates core stock-trading workflows — user authentication, buying/selling stocks, live holdings tracking, and order history — across three connected applications.
 
-## Available Scripts
+🔗 **Live Demo:** [zerodha-frontend-dfxl.onrender.com](https://zerodha-frontend-dfxl.onrender.com)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Authentication** — Signup, login, and logout with JWT tokens stored in httpOnly cookies, and passwords hashed with bcrypt
+- **Buy/Sell Orders** — Place buy and sell orders on any stock, with real-time order history
+- **Smart Holdings** — Buying updates holdings automatically (recalculates average price), selling reduces or removes holdings depending on quantity
+- **Live Price Simulation** — Stock prices fluctuate periodically on the Holdings page for a realistic "live market" feel
+- **Order History** — All buy/sell orders are logged and viewable on the Orders page
+- **Protected Routes** — Dashboard data (holdings, positions, orders) is only accessible to authenticated users
+- **Dynamic Profile** — Logged-in username is fetched and displayed in the dashboard menu
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+**Frontend & Dashboard**
+- React
+- React Router
+- Axios
+- Chart.js (for holdings visualization)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Backend**
+- Node.js + Express
+- MongoDB with Mongoose (hosted on MongoDB Atlas)
+- JWT (jsonwebtoken) for authentication
+- bcryptjs for password hashing
+- cookie-parser + CORS for secure cross-origin auth
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js installed
+- A MongoDB Atlas connection string
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📝 API Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Method | Route            | Description                          |
+|--------|-------------------|---------------------------------------|
+| POST   | `/signup`         | Create a new user account             |
+| POST   | `/login`          | Authenticate and receive a session cookie |
+| POST   | `/logout`         | Clear the session cookie              |
+| GET    | `/check-auth`     | Verify current login status           |
+| GET    | `/allholdings`    | Fetch the logged-in user's holdings   |
+| GET    | `/allpositions`   | Fetch the logged-in user's positions  |
+| GET    | `/allOrders`      | Fetch order history                   |
+| POST   | `/newOrder`       | Place a buy or sell order             |
 
-### `npm run eject`
+## 📌 Notes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- This is a **learning/portfolio project** and is not affiliated with Zerodha Broking Ltd. in any way.
+- Live prices are simulated for demo purposes rather than pulled from a real market data feed.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👤 Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Aditya Rajpoot**  
+GitHub: [@Aditya-Rajpoot](https://github.com/Aditya-Rajpoot)
