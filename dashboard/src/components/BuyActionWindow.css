@@ -21,7 +21,7 @@
   border: 1px solid #eeeeee;
 }
 
-/* ================= HEADER ================= */
+
 
 #buy-window .buy-window-header {
   width: 100%;
@@ -49,7 +49,7 @@
   font-size: 0.6rem;
 }
 
-/* ================= MARKET OPTIONS ================= */
+
 
 #buy-window .market-options {
   font-weight: 300;
@@ -76,7 +76,7 @@
   accent-color: #fff;
 }
 
-/* ================= TABS ================= */
+
 
 #buy-window .buy-window-tabs {
   width: 100%;
@@ -110,7 +110,7 @@
   cursor: pointer;
 }
 
-/* ================= ACTIVE TAB ================= */
+
 
 #buy-window .buy-window-tabs button:first-child::after {
   content: "";
@@ -128,7 +128,7 @@
   background-color: #387ed1;
 }
 
-/* ================= ORDER SECTION ================= */
+
 
 #buy-window .regular-order {
   width: 100%;
@@ -141,7 +141,7 @@
   background-color: #fff;
 }
 
-/* ================= INPUTS ================= */
+
 
 #buy-window .inputs {
   width: 100%;
@@ -157,7 +157,7 @@
   margin: 0 0 14px 0;
 }
 
-/* ================= FIELDSET ================= */
+
 
 #buy-window .inputs fieldset {
   width: 100%;
@@ -171,7 +171,7 @@
   padding: 0;
 }
 
-/* ================= LEGEND ================= */
+
 
 #buy-window .inputs fieldset legend {
   margin-left: 10px;
