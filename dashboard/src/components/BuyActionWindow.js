@@ -27,6 +27,7 @@ const BuyActionWindow = ({ uid, price }) => {
       );
 
       generalContext.closeBuyWindow();
+      window.location.reload();
       
     } catch (error) {
       console.log("Buy order error:", error);

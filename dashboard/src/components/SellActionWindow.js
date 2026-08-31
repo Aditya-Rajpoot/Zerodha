@@ -27,6 +27,7 @@ const SellActionWindow = ({ uid, price }) => {
       );
 
       generalContext.closeSellWindow();
+      window.location.reload();
       
     } catch (error) {
       console.log("Sell order error:", error);
