@@ -11,12 +11,12 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://zerodha-backend-3wdd.onrender.com/signup",
+        "https://zerodha-l494.onrender.com/signup",
         { email, password, username },
         { withCredentials: true }
       );
       if (data.success) {
-        window.location.href = "https://zerodha-dashboard-xj7p.onrender.com";
+        window.location.href = "https://zerodha-kjsf.onrender.com";
       } else {
         alert(data.message);
       }

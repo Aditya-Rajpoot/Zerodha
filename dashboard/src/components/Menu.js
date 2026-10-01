@@ -9,7 +9,7 @@ const Menu = () => {
 
   useEffect(() => {
     axios
-      .get("https://zerodha-backend-3wdd.onrender.com/check-auth", { withCredentials: true })
+      .get("https://zerodha-l494.onrender.com/check-auth", { withCredentials: true })
       .then((res) => {
         if (res.data.status) {
           setUsername(res.data.user.username);
@@ -31,11 +31,11 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "https://zerodha-backend-3wdd.onrender.com/logout",
+        "https://zerodha-l494.onrender.com/logout",
         {},
         { withCredentials: true }
       );
-      window.location.href = "https://zerodha-frontend-dfxl.onrender.com";
+      window.location.href = "https://zerodha-82zx.vercel.app";
     } catch (error) {
       console.error(error);
     }
