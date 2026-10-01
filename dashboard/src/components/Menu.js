@@ -35,7 +35,7 @@ const Menu = () => {
         {},
         { withCredentials: true }
       );
-      window.location.href = "https://zerodha-82zx.vercel.app";
+      window.location.href = "https://zerodha-henna-two.vercel.app";
     } catch (error) {
       console.error(error);
     }

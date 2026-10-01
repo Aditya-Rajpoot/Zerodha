@@ -20,7 +20,7 @@ const uri = process.env.MONGO_URL;
 const app = express();
 
 app.use(cors({
-  origin: ["https://zerodha-82zx.vercel.app", "https://zerodha-kjsf.onrender.com"], 
+  origin: ["https://zerodha-henna-two.vercel.app", "https://zerodha-kjsf.onrender.com"], 
   credentials: true,
 }));
 app.use(bodyParser.json());

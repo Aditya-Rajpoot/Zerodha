@@ -12,13 +12,13 @@ const Home = () => {
       .get("https://zerodha-l494.onrender.com/check-auth", { withCredentials: true })
       .then((res) => {
         if (!res.data.status) {
-          window.location.href = "https://zerodha-82zx.vercel.app";
+          window.location.href = "https://zerodha-henna-two.vercel.app";
         } else {
           setLoading(false);
         }
       })
       .catch(() => {
-        window.location.href = "https://zerodha-82zx.vercel.app";
+        window.location.href = "https://zerodha-henna-two.vercel.app";
       });
   }, []);
 
