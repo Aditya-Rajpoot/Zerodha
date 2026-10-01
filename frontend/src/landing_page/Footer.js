@@ -19,35 +19,35 @@ function Footer() {
 
           <div className="col">
             <p className="footer-col-title">Company</p>
-            <a href="" className="footer-link">About</a>
-            <a href="" className="footer-link">Philosophy</a>
-            <a href="" className="footer-link">Open source </a>
-            <a href="" className="footer-link">Referral programme</a>
-            <a href="" className="footer-link">Careers</a>
-            <a href="" className="footer-link">Zerodha.tech</a>
-            <a href="" className="footer-link">Press & media</a>
-            <a href="" className="footer-link">Zerodha cares (CSR)</a>
+            <a href="#" className="footer-link">About</a>
+            <a href="#" className="footer-link">Philosophy</a>
+            <a href="#" className="footer-link">Open source </a>
+            <a href="#" className="footer-link">Referral programme</a>
+            <a href="#" className="footer-link">Careers</a>
+            <a href="#" className="footer-link">Zerodha.tech</a>
+            <a href="#" className="footer-link">Press & media</a>
+            <a href="#" className="footer-link">Zerodha cares (CSR)</a>
           </div>
 
           <div className="col">
             <p className="footer-col-title">Support</p>
-            <a href="" className="footer-link">Contact</a>
-            <a href="" className="footer-link">Support portal</a>
-            <a href="" className="footer-link">Z-Connect blog</a>
-            <a href="" className="footer-link">List of charges</a>
-            <a href="" className="footer-link">Downloads & resources</a>
+            <a href="#" className="footer-link">Contact</a>
+            <a href="#" className="footer-link">Support portal</a>
+            <a href="#" className="footer-link">Z-Connect blog</a>
+            <a href="#" className="footer-link">List of charges</a>
+            <a href="#" className="footer-link">Downloads & resources</a>
           </div>
 
           <div className="col">
             <p className="footer-col-title">Account</p>
-            <a href="" className="footer-link">Open an account</a>
-            <a href="" className="footer-link">Fund transfer</a>
-            <a href="" className="footer-link">Minor demat account</a>
-            <a href="" className="footer-link">NRI demat account</a>
-            <a href="" className="footer-link">HUF demat account</a>
-            <a href="" className="footer-link">Commodity</a>
-            <a href="" className="footer-link">Dematerialisation</a>
-            <a href="" className="footer-link">Fund transfer</a>
+            <a href="#" className="footer-link">Open an account</a>
+            <a href="#" className="footer-link">Fund transfer</a>
+            <a href="#" className="footer-link">Minor demat account</a>
+            <a href="#" className="footer-link">NRI demat account</a>
+            <a href="#" className="footer-link">HUF demat account</a>
+            <a href="#" className="footer-link">Commodity</a>
+            <a href="#" className="footer-link">Dematerialisation</a>
+            <a href="#" className="footer-link">Fund transfer</a>
 
           </div>
         </div>
@@ -100,17 +100,17 @@ function Footer() {
         </div>
 
         <div className="d-flex flex-wrap footer-bottom-links">
-          <a href="" className="footer-bottom-link">NSE</a>
-          <a href="" className="footer-bottom-link">BSE</a>
-          <a href="" className="footer-bottom-link">MCX</a>
-          <a href="" className="footer-bottom-link">MSEI</a>
-          <a href="" className="footer-bottom-link">Terms & conditions</a>
-          <a href="" className="footer-bottom-link">Policies & procedures</a>
-          <a href="" className="footer-bottom-link">Privacy policy</a>
-          <a href="" className="footer-bottom-link">Disclosure</a>
-          <a href="" className="footer-bottom-link">For investor's attention</a>
-          <a href="" className="footer-bottom-link">Investor charter</a>
-          <a href="" className="footer-bottom-link">Sitemap</a>
+          <a href="#" className="footer-bottom-link">NSE</a>
+          <a href="#" className="footer-bottom-link">BSE</a>
+          <a href="#" className="footer-bottom-link">MCX</a>
+          <a href="#" className="footer-bottom-link">MSEI</a>
+          <a href="#" className="footer-bottom-link">Terms & conditions</a>
+          <a href="#" className="footer-bottom-link">Policies & procedures</a>
+          <a href="#" className="footer-bottom-link">Privacy policy</a>
+          <a href="#" className="footer-bottom-link">Disclosure</a>
+          <a href="#" className="footer-bottom-link">For investor's attention</a>
+          <a href="#" className="footer-bottom-link">Investor charter</a>
+          <a href="#" className="footer-bottom-link">Sitemap</a>
         </div>
       </div>
     </footer>
