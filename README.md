@@ -68,26 +68,4 @@ This project recreates Zerodha's trading interface — the public landing page, 
 - Frontend hosted on **Vercel**
 - Database on **MongoDB Atlas**
 
-## 📂 Project Structure
-Zerodha/
-├── backend/
-│ ├── models/ # Holdings, Positions, Orders schemas
-│ ├── index.js # Express app, routes, CORS, DB connection
-│ └── .env
-│
-├── dashboard/
-│ └── src/
-│ ├── components/ # Holdings, Positions, Orders, Funds, BuyActionWindow, SellActionWindow
-│ ├── GeneralContext.js
-│ └── App.js
-│
-└── frontend/
-└── src/
-└── landing_page/
-├── home/
-├── products/
-├── pricing/
-├── about/
-├── support/
-├── signup/
-└── login/
+  
