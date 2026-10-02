@@ -68,4 +68,61 @@ This project recreates Zerodha's trading interface — the public landing page, 
 - Frontend hosted on **Vercel**
 - Database on **MongoDB Atlas**
 
-  
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js and npm
+- A MongoDB connection string (e.g. from MongoDB Atlas)
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Aditya-Rajpoot/Zerodha.git
+cd Zerodha
+```
+
+### 2. Backend setup
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file in `backend/`:
+```env
+PORT=3002
+MONGO_URL=your_mongodb_connection_string
+```
+
+```bash
+node index.js
+```
+
+### 3. Dashboard setup
+```bash
+cd dashboard
+npm install
+npm start
+```
+
+### 4. Frontend setup
+```bash
+cd frontend
+npm install
+npm start
+```
+
+## 🗺️ Roadmap
+
+- [ ] Sell functionality refinement
+- [ ] Complete JWT-based signup/login/logout flow
+- [ ] Real-time price updates (WebSocket)
+- [ ] Mobile-responsive dashboard layout
+
+## 👤 Author
+
+Built by **Aditya Rajpoot**
+
+---
+
+<div align="center">
+Made with a lot of CORS errors and one empty href attribute at a time.
+</div>
